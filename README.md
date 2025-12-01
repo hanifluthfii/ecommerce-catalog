@@ -1,6 +1,6 @@
 # E-Commerce Catalog (Vue.js)
 
-Project ini dibuat sebagai Final Task VIX Core Initiative – Frontend Engineer.  
+Project ini dibuat sebagai Final Task VIX Core Initiative – Frontend Developer.
 Aplikasi menampilkan katalog produk dari FakeStoreAPI dan mengimplementasikan desain Figma menggunakan Vue.js + Vanilla CSS.
 
 ---
