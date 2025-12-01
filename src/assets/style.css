@@ -1,0 +1,242 @@
+/* warna */
+:root {
+  --blue: #002772;
+  --pink: #fde2ff;
+  --light-blue: #d6e6ff;
+  --purple: #720060;
+  --gray-dark: #3f3f3f;
+  --gray-light: #dcdcdc;
+  --white: #ffffff;
+}
+
+/* layout utama */
+.page-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 120px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* bg perempuan */
+.women {
+  background-image: url('../assets/bg-pattern.svg'),
+                    linear-gradient(to bottom, var(--pink) 65%, var(--white) 35%);
+  background-size: 1200px auto, 100% 100%;
+  background-repeat: repeat-x, no-repeat;
+  background-position: top left, top;
+}
+
+/* bg laki */
+.men {
+  background-image: url('../assets/bg-pattern-1.svg'),
+                    linear-gradient(to bottom, var(--light-blue) 65%, var(--white) 35%);
+  background-size: 1200px auto, 100% 100%;
+  background-repeat: repeat-x, no-repeat;
+  background-position: top left, top;
+}
+
+/* bg unavailable */
+.unavailable {
+  background: linear-gradient(to bottom, var(--gray-light) 65%, var(--white) 35%);
+  position: relative;
+}
+
+/* card unavailable */
+.unavailable-card {
+  width: 1034px;
+  height: 580px;
+  background: var(--white);
+  border-radius: 12px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 2px 4px 21px rgba(0,0,0,0.20);
+  position: relative;
+  overflow: hidden;
+  z-index: 10;
+}
+
+/* sad face */
+.unavailable-card::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -55%);
+  width: 750px;
+  height: 430px;
+  background-image: url('./sad-face.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.15;
+  z-index: 1;
+}
+
+/* teks unavailable */
+.unavailable-card h3 {
+  margin-top: 240px;
+  margin-bottom: 25px;
+  font-size: 18px;
+  position: relative;
+  z-index: 2;
+}
+
+/* tombol next */
+.unavailable-card .btn-next {
+  width: 200px;
+  padding: 12px 0;
+  border: 2px solid var(--purple);
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 16px;
+  background: var(--white);
+  color: var(--purple);
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+
+/* card normal */
+.product-card {
+  width: 1034px;
+  height: 580px;
+  background: var(--white);
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 2px 4px 21px rgba(0,0,0,0.20);
+  display: flex;
+  gap: 40px;
+  position: relative;
+}
+
+/* gambar produk */
+.product-card img {
+  width: 420px;
+  height: 500px;
+  object-fit: contain;
+}
+
+/* info kanan */
+.product-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* judul */
+.product-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--purple);
+  margin-bottom: 4px;
+}
+
+/* kategori + rating */
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* kategori */
+.product-category {
+  font-size: 25px;
+  color: var(--gray-dark);
+}
+
+/* rating */
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.rate-number {
+  font-size: 20px;
+  color: var(--gray-dark);
+}
+
+/* titik rating */
+.bullets {
+  display: flex;
+  gap: 3px;
+}
+
+.bullet {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--purple);
+}
+
+.bullet.off {
+  background: #cccccc;
+}
+
+/* garis ungu */
+.top-divider {
+  width: 100%;
+  height: 3px;
+  background: var(--purple);
+  border-radius: 2px;
+  margin: 10px 0 20px;
+}
+
+/* garis abu */
+.divider {
+  width: 100%;
+  height: 2px;
+  background: var(--gray-light);
+  margin: 35px 0 20px;
+}
+
+/* deskripsi */
+.product-description {
+  font-size: 20px;
+  line-height: 1.4;
+  color: var(--gray-dark);
+  height: 170px;
+  overflow: auto;
+  margin-bottom: 20px;
+}
+
+/* harga */
+.product-price {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--purple);
+  margin-bottom: 12px;
+}
+
+/* tombol */
+.actions {
+  display: flex;
+  gap: 20px;
+  margin-top: auto;
+}
+
+/* tombol beli */
+.btn-buy {
+  background: var(--purple);
+  color: var(--white);
+  border: none;
+  padding: 14px 55px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* tombol next */
+.btn-next {
+  border: 2px solid var(--purple);
+  padding: 14px 55px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  background: var(--white);
+  color: var(--purple);
+  font-weight: 600;
+}
